@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="adimate.css">
+	</head>
+	<body> 
+		<div class="wrapper">
+		    <img id="image-area" src='https://varunsk.github.io/Native_ads_test/Latest_native_ads_test/images/background.png'/>	
+			<div class="l-text-area">
+				<header class="header">ADVERTISEMENT</header>
+				<div class="logo">
+					<img src="https://varunsk.github.io/Native_ads_test/Latest_native_ads_test/images/logo_PeopleShop.png" alt="" title="">
+				</div>	    
+				<div class="main">Get Your Fix at the People Shop</div>
+				<div class="subheading">Great Gifts under $25</div>
+				<footer class="footer">
+					<a href="https://shop.people.com/storefront/?xid=googlenativead" target="_blank" class="main-cta">SHOP NOW</a>
+				</footer>
+			</div>
+		</div>
+	</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://localhost/Ads_animation/adimate.js"></script>
+    <script>
+     ad3 = new adimate({
+                div:  'test',
+                effect: 'zoom',
+                event : 'message',
+                onAnimationStart: function() {
+                },
+                onAnimationStop: function() {
+                }
+            });
+    
+    window.onload = function () {
+    parentWindow    = window.parent;
+		var data = {
+			'value': {
+				'href': window.location.href
+			}, 
+			'action' : 'init'
+		};
+    parentWindow.postMessage(data,'*');
+    setTimeout(sendHeight, 200);
+    //setTimeout(sendHeight, 4000);
+    //setTimeout(sendHeight, 15000);   
+  };
+    </script>
+</html>
