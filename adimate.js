@@ -106,15 +106,12 @@ function listener(event){
   }
 
 function adimate(options) {
-    $('head').append('<link rel="stylesheet" type="text/css" href="style.css">');
     if (options.event == 'scroll') {
-        //console.log('scroll');
         window.addEventListener('scroll', function() {
             animation(options);
         }, false);
     }
      else if (options.event == 'hover') {
-        //console.log("hover");
         window.addEventListener('mouseover', function() {
             animation(options);
         }, false);
@@ -125,3 +122,4 @@ function adimate(options) {
          }, false);
         }
   }
+  

@@ -1,63 +1,63 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Adimate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="http://localhost/Ads_animation/nativead.js"></script>
-    <script type="text/javascript" src="http://localhost/Ads_animation/adimate.js"></script>    
+    <script type="text/javascript" src="http://localhost/Ads_animation/adimate.js"></script>
 </head>
 
 <body>
-<div class="row" id="demo1">
-    <img src="1.jpg" id="img">
-</div>
-<div class="row" id="demo2">
-    <img src="2.jpg" id="img">
-</div>
-<div class="row" id="demo3">
-    <img src="3.jpg" id="img">
-</div>
-<p>This image shows the animation for zoom on scroll</p>
-<div id="mydiv">
-    <div id="inner">
-        <img src="ad.jpeg">
+    <div class="row" id="demo1"><img src="1.jpg" id="img"></div>
+    <div class="row" id="demo2"><img src="2.jpg" id="img"></div>
+    <div class="row" id="demo3"><img src="3.jpg" id="img"></div>
+    <div class="row" id="demo1"><img src="4.jpg" id="img"></div>
+    <div class="row" id="demo2"><img src="5.jpg" id="img"></div>
+    <div class="row" id="demo1"><img src="7.jpg" id="img"></div>
+    <div class="row" id="demo2"><img src="2.jpg" id="img"></div>
+    <div class="row" id="demo3"><img src="3.jpg" id="img"></div>
+    <div class="row tm" ><span>This image shows the animation for zoom on scroll</span></div>
+    <div id="mydiv">
+        <div id="first_image">
+            <img src="ad.jpeg">
+        </div>
     </div>
-</div>
-<p>This image shows the animation for buzz on hover</p>
-<div id="mydiv">
-    <div id="second_image">
-        <img src="ad.jpeg">
+     <div class="row" id="demo2"><img src="5.jpg" id="img"></div>
+    <div class="row" id="demo1"><img src="7.jpg" id="img"></div>
+    <div class="row" id="demo2"><img src="2.jpg" id="img"></div>
+    <div class="row" id="demo3"><img src="3.jpg" id="img"></div>
+    <div class="row tm" ><span>This image shows the animation for buzz on hover</span></div>
+    <div id="mydiv">
+        <div id="second_image">
+            <img src="ad.jpeg">
+        </div>
     </div>
-</div>
-<div class="row" id="demo1">
-    <img src="1.jpg" id="img">
-</div>
-<div class="row" id="demo2">
-    <img src="2.jpg" id="img">
-</div>
-<div class="row" id="demo3">
-    <img src="3.jpg" id="img">
-</div>
-<div id="test">
-	<iframe id="iframe" src="http://localhost/Ads_animation/adimate.html" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="0" style="border: 0px;vertical-align: bottom";></iframe>
-</div>
-<p>This image shows the animation for wobble-vertical on scroll</p>
-<div id="mydiv">
-    <div id="third_image">
-        <img src="ad.jpeg">
+     <div class="row" id="demo2"><img src="5.jpg" id="img"></div>
+    <div class="row" id="demo1"><img src="7.jpg" id="img"></div>
+    <div class="row" id="demo2"><img src="2.jpg" id="img"></div>
+    <div class="row" id="demo3"><img src="3.jpg" id="img"></div>
+    <div class="row tm" ><span>Zoom in and Zoom out animation is controlled by user scrolling</span></div>
+    <div id="test">
+        <iframe id="iframe" src="http://localhost/Ads_animation/adimate.html" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="0" style="border: 0px;vertical-align: bottom";></iframe>
     </div>
-</div>
-
-</body>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <div class="row" id="demo2"><img src="5.jpg" id="img"></div>
+    <div class="row" id="demo1"><img src="7.jpg" id="img"></div>
+    <div class="row" id="demo2"><img src="2.jpg" id="img"></div>
+    <div class="row" id="demo3"><img src="3.jpg" id="img"></div>
+    <div class="row tm" ><span>This image shows the animation for wobble-vertical on scroll</span></div>
+    <div id="mydiv">
+        <div id="third_image">
+            <img src="ad.jpeg">
+        </div>
+    </div>
+    </body>
     <script>
         (function() {
             
            ad = new adimate({
-                div:  document.getElementById('inner'),
+                div:  document.getElementById('first_image'),
                 effect: 'hvr-pulse',
                 event : 'scroll',
                 onAnimationStart: function() {
@@ -85,9 +85,6 @@
                 onAnimationStop: function() {
                 }
             });
-
-            //ad.stop();
-            //ad.strt();
         })();
     </script>
 

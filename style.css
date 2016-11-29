@@ -7,15 +7,22 @@
 }
 .row
 {
-  height: 315px;
-  width:315px;
-  background-size: cover;
-  background-position: center;
+  width:292px;
+  border-style: solid;
 }
+.row > span{
+    font-size : 20px;
+    font-weight : bold;
+    color: black;
+}
+
+.tm{
+	margin-top : 10px;
+}
+
 #img
 {
-  height: 315px;
-  width: 315px;
+  width: 100%;
 }
 /* Pulse */
 @-webkit-keyframes hvr-pulse {
