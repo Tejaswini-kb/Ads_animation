@@ -133,16 +133,18 @@
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale; }
-  .hvr-buzz-out:hover{
-    -webkit-animation-name: hvr-buzz-out;
-    animation-name: hvr-buzz-out;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2; }
+  -moz-osx-font-smoothing: grayscale;
+ -webkit-animation-name: hvr-buzz-out;
+   animation-name: hvr-buzz-out;
+   -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   -webkit-animation-iteration-count: 2;
+   animation-iteration-count: 2; 
+}
+  
+   
 
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
