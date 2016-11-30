@@ -70,7 +70,7 @@
 function animate(mode, dir, div_id) {
      if (mode == 'pulse') {
         div_id.classList.add(dir);
-    } else if (mode == 'rubberBand') {
+    } else if (mode == 'skew') {
         div_id.classList.add(dir);
     } else if (mode == 'buzz') {
         div_id.classList.add(dir);
@@ -87,8 +87,8 @@ function animation(options) {
                 animate('buzz', options.effect, options.div);
             } else if (options.effect == 'hvr-pulse') {
                 animate('pulse', options.effect, options.div);
-            } else if (options.effect == 'rubberBand') {
-                animate('rubberBand', options.effect, options.div);
+            } else if (options.effect == 'hvr-skew') {
+                animate('skew', options.effect, options.div);
             } 
         }
     } else {
