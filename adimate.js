@@ -72,7 +72,7 @@ function animate(mode, dir, div_id) {
         div_id.classList.add(dir);
     } else if (mode == 'skew') {
         div_id.classList.add(dir);
-    } else if (mode == 'buzz') {
+    } else if (mode == 'rotate') {
         div_id.classList.add(dir);
     }
 }
@@ -83,8 +83,8 @@ function animation(options) {
             } 
     else if (elementInViewport(options.div)) {
         if (!(options.div.classList.contains(options.effect))) {
-            if (options.effect == 'hvr-buzz-out') {
-                animate('buzz', options.effect, options.div);
+            if (options.effect == 'hvr-rotate') {
+                animate('rotate', options.effect, options.div);
             } else if (options.effect == 'hvr-pulse') {
                 animate('pulse', options.effect, options.div);
             } else if (options.effect == 'hvr-skew') {
