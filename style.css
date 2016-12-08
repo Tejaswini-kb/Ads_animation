@@ -25,7 +25,7 @@
   width: 100%;
 }
 /* Pulse */
-@-webkit-keyframes hvr-pulse {
+@-webkit-keyframes pulse {
   50% {
     -webkit-transform: scale(1.5);
     transform: scale(1.5); }
@@ -33,7 +33,7 @@
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
-@keyframes hvr-pulse {
+@keyframes pulse {
   50% {
     -webkit-transform: scale(1.5);
     transform: scale(1.5); }
@@ -41,7 +41,7 @@
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
-.hvr-pulse {
+.pulse {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -50,10 +50,10 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale; 
-    -webkit-animation-name: hvr-pulse;
-    animation-name: hvr-pulse;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 2;
@@ -61,7 +61,7 @@
   }
 
   /* Buzz Out */
-@-webkit-keyframes hvr-buzz-out {
+@-webkit-keyframes buzz-out {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg); }
@@ -93,7 +93,7 @@
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0); } }
 
-@keyframes hvr-buzz-out {
+@keyframes buzz-out {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg); }
@@ -125,7 +125,7 @@
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0); } }
 
-.hvr-buzz-out {
+.buzz-out {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -134,20 +134,19 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
- -webkit-animation-name: hvr-buzz-out;
-   animation-name: hvr-buzz-out;
-   -webkit-animation-duration: 0.75s;
-   animation-duration: 0.75s;
-   -webkit-animation-timing-function: linear;
-   animation-timing-function: linear;
-   -webkit-animation-iteration-count: 2;
-   animation-iteration-count: 2; 
-}
-  
-   
+  -webkit-animation-name: buzz-out;
+    animation-name: buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+   }
+
 
 /* Wobble Vertical */
-@-webkit-keyframes hvr-wobble-vertical {
+@-webkit-keyframes wobble-vertical {
   16.65% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); }
@@ -167,7 +166,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes hvr-wobble-vertical {
+@keyframes wobble-vertical {
   16.65% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); }
@@ -187,7 +186,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-.hvr-wobble-vertical {
+.wobble-vertical {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -196,8 +195,8 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-    -webkit-animation-name: hvr-wobble-vertical;
-    animation-name: hvr-wobble-vertical;
+    -webkit-animation-name: wobble-vertical;
+    animation-name: wobble-vertical;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-timing-function: ease-in-out;
@@ -205,7 +204,7 @@
     -webkit-animation-iteration-count: 2;
     animation-iteration-count: 2; }
 
-@-webkit-keyframes hvr-skew {
+@-webkit-keyframes skew {
   25% {
   -webkit-transform: skewX(-15deg); 
   transform: skew(-15deg); 
@@ -219,7 +218,7 @@
     transform: skew(-15deg);
      }
 }
-@keyframes hvr-skew {
+@keyframes skew {
   25% {
   -webkit-transform: skewX(-15deg); 
   transform: skew(-15deg); 
@@ -235,7 +234,7 @@
   }
 
 
-.hvr-skew {
+.skew {
  display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -244,8 +243,8 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-animation-name: hvr-skew;
-  animation-name: hvr-skew;
+  -webkit-animation-name: skew;
+  animation-name: skew;
    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
   -webkit-animation-duration: 5s;
@@ -253,7 +252,7 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; 
      }
-@-webkit-keyframes hvr-rotate {
+@-webkit-keyframes rotate {
   11%
   {
     -webkit-transform: rotate(10deg); 
@@ -291,7 +290,7 @@
   -webkit-transform: rotate(0deg); 
   transform: rotate(0deg); }
 }
-@keyframes hvr-rotate {
+@keyframes rotate {
   11%
   {
     -webkit-transform: rotate(10deg); 
@@ -329,7 +328,7 @@
   -webkit-transform: rotate(0deg); 
   transform: rotate(0deg); }
   }
-.hvr-rotate {
+.rotate {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -340,8 +339,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-animation-name: hvr-rotate;
-  animation-name: hvr-rotate;
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-property: transform;
   animation-property: transform;
 -webkit-animation-timing-function: linear;
@@ -352,4 +351,7 @@
   animation-iteration-count: 1;
   animation-delay: 1s;
    }
+  /*.rotate:hover, .rotate:focus, .rotate:active {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg); }*/
 

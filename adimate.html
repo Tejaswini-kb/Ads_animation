@@ -5,8 +5,7 @@
 	</head>
 	<body> 
 		<div class="wrapper">
-		<div id="animate_image">
-		   <img id="image-area" src='https://varunsk.github.io/Native_ads_test/Latest_native_ads_test/images/background.png'/></div>	
+		  <div id="animate_image">  <img id="image-area" src='https://varunsk.github.io/Native_ads_test/Latest_native_ads_test/images/background.png'/></div>	
 			<div class="l-text-area">
 				<header class="header">ADVERTISEMENT</header>
 				<div class="logo">
@@ -20,9 +19,11 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="adimate.js"></script>
+	<script type="text/javascript" src="http://localhost:8888/Ads_animation/zoomAnimation.js"></script>
+	<script type="text/javascript" src="http://localhost:8888/Ads_animation/adimate.js"></script>
+
     <script>
-     ad3 = new adimate({
+    ad3 = new adimate({
                 div:  'test',
                 effect: 'zoom',
                 event : 'message',
@@ -30,20 +31,20 @@
                 },
                 onAnimationStop: function() {
                 }
-            });
-    
-    window.onload = function () {
+            }); 
+  	window.onload = function () {
     parentWindow    = window.parent;
-		var data = {
-			'value': {
-				'href': window.location.href
-			}, 
-			'action' : 'init'
-		};
+        var data = {
+            'value': {
+                'href': window.location.href
+            }, 
+            'action' : 'init'
+        };
     parentWindow.postMessage(data,'*');
-    setTimeout(sendHeight, 200);
+    setTimeout(sendHeight, 200);};
+   
     //setTimeout(sendHeight, 4000);
     //setTimeout(sendHeight, 15000);   
-  };
+  
     </script>
 </html>

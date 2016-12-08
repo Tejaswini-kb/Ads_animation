@@ -18,65 +18,62 @@
   }
 
   function getElementBySrc(value){
-    return document.querySelector("[src=\""+value+"\"]");
+    return document.querySelector('[src=\''+value+'\']');
   }
 
   function setIframeDimension(data){
     var iframeid = getElementBySrc(data.value.href).id;
-    document.getElementById(iframeid).style.height = data.value.height+"px";
+    document.getElementById(iframeid).style.height = data.value.height+'px';
   }
-
   var scrollTimeout = 0;
-
   function startWatching(data) {
     var iframeId = getElementBySrc(data.value.href).id;
-    window.onscroll = function(event){
-      clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(function(){
-          var childWindow = document.getElementById(iframeId).contentWindow;
-          childWindow.postMessage('Stop animation','*');
+    window.onscroll = function(event) {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function() {
+        var childWindow = document.getElementById(iframeId).contentWindow;
+        childWindow.postMessage('Stop animation', '*');
         }, 100);
-
         scrollHandler(iframeId);
     };
   }
 
   var lastScrollTop = 0;
-
-  function scrollHandler(iframeId){
+  function scrollHandler(iframeId) {
     var divId = document.getElementById(iframeId).parentNode.id;
     var iframeDiv = document.getElementById(divId);
     var childWindow = document.getElementById(iframeId).contentWindow;
     var data;
-    if(elementInViewport(iframeDiv)){
+    if(elementInViewport(iframeDiv)) {
       scrolledTop = window.scrollY;
-      if(scrolledTop < lastScrollTop){
-        data = {'action' : 'Up'};
+      if(scrolledTop < lastScrollTop) {
+        data = {'action': 'Up'};
       }
-      else{
-        data = {'action' : 'Down'};
+      else
+      {
+        data = {'action': 'Down'};
       }
-      childWindow.postMessage(data,'*');
+      childWindow.postMessage(data, '*');
       lastScrollTop = scrolledTop;
     }
   }
 
-  function listener(event){
+  function listener(event) {
     if( typeof(event.data) == 'object' && 'action' in event.data){
-      if(event.data.action == 'init'){
+      if(event.data.action == 'init') {
         startWatching(event.data);
       }
-      else if(event.data.action == 'height'){
+      else if(event.data.action == 'height') {
         setIframeDimension(event.data);
       }
     }
   }
 
-  if (window.addEventListener){ 
-    addEventListener("message", listener, false);
+  if (window.addEventListener) {
+    addEventListener('message', listener, false);
   } 
   else{
-    attachEvent("onmessage", listener);
+    attachEvent('onmessage', listener);
   }
 })();
 
