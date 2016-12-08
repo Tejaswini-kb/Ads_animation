@@ -133,16 +133,18 @@
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale; }
-  .hvr-buzz-out:hover{
-    -webkit-animation-name: hvr-buzz-out;
-    animation-name: hvr-buzz-out;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2; }
+  -moz-osx-font-smoothing: grayscale;
+ -webkit-animation-name: hvr-buzz-out;
+   animation-name: hvr-buzz-out;
+   -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   -webkit-animation-iteration-count: 2;
+   animation-iteration-count: 2; 
+}
+  
+   
 
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
@@ -202,4 +204,152 @@
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 2;
     animation-iteration-count: 2; }
+
+@-webkit-keyframes hvr-skew {
+  25% {
+  -webkit-transform: skewX(-15deg); 
+  transform: skew(-15deg); 
+  }
+  50% {
+    -webkit-transform: skewX(0deg); 
+    transform: skew(0deg);
+     }
+  75% { 
+    -webkit-transform: skewX(-15deg);
+    transform: skew(-15deg);
+     }
+}
+@keyframes hvr-skew {
+  25% {
+  -webkit-transform: skewX(-15deg); 
+  transform: skew(-15deg); 
+  }
+  50% {
+    -webkit-transform: skewX(0deg); 
+    transform: skew(0deg);
+     }
+  75% { 
+    -webkit-transform: skewX(-15deg);
+    transform: skew(-15deg);
+     }
+  }
+
+
+.hvr-skew {
+ display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation-name: hvr-skew;
+  animation-name: hvr-skew;
+   -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; 
+     }
+@-webkit-keyframes hvr-rotate {
+  11%
+  {
+    -webkit-transform: rotate(10deg); 
+    transform: rotate(10deg); 
+  }
+  22%
+  {
+    -webkit-transform: rotate(25deg); 
+    transform: rotate(25deg); 
+  }
+  33%
+  {
+    -webkit-transform: rotate(40deg); 
+    transform: rotate(40deg); 
+  }
+  44% {
+  -webkit-transform: rotate(50deg); 
+  transform: rotate(50deg); 
+  }
+  55%{
+  -webkit-transform: rotate(30deg); 
+  transform: rotate(30deg); 
+}
+
+  66% {
+    -webkit-transform: rotate(50deg); 
+    transform: rotate(50deg);
+     }
+  77% { 
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  88%
+  {
+  -webkit-transform: rotate(0deg); 
+  transform: rotate(0deg); }
+}
+@keyframes hvr-rotate {
+  11%
+  {
+    -webkit-transform: rotate(10deg); 
+    transform: rotate(10deg); 
+  }
+  22%
+  {
+    -webkit-transform: rotate(25deg); 
+    transform: rotate(25deg); 
+  }
+  33%
+  {
+    -webkit-transform: rotate(40deg); 
+    transform: rotate(40deg); 
+  }
+  44% {
+  -webkit-transform: rotate(50deg); 
+  transform: rotate(50deg); 
+  }
+  55%{
+  -webkit-transform: rotate(30deg); 
+  transform: rotate(30deg); 
+}
+
+  66% {
+    -webkit-transform: rotate(50deg); 
+    transform: rotate(50deg);
+     }
+  77% { 
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  88%
+  {
+  -webkit-transform: rotate(0deg); 
+  transform: rotate(0deg); }
+  }
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-animation-name: hvr-rotate;
+  animation-name: hvr-rotate;
+  -webkit-animation-property: transform;
+  animation-property: transform;
+-webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+   }
 
